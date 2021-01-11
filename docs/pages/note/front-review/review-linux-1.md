@@ -277,27 +277,6 @@ __不能直接使用yum安装，要去下载安装nodejs的源__
 3. 查看安装的版本
 ` node -v `
 
-#### 安装xampp集成开发环境
-待续
-
----
-<br />
-
-## 6. 关于某些网站无法访问的解决方法
-在浏览器⾥执⾏下列代码
-```
-var hexCharCodeStr =
-'68747470733a2f2f737068617264322e6769746875622e696f2f6766772f'
-var rawStr = hexCharCodeStr.trim();
-var len = rawStr.length;
-var curCharCode;
-var resultStr = [];
-for(var i = 0; i < len;i = i + 2) {
-    curCharCode = parseInt(rawStr.substr(i, 2), 16);
-    resultStr.push(String.fromCharCode(curCharCode));
-}
-console.log( resultStr.join("") );
-```
 ---
 
 <font color="#666" size="5">\~End~</font>
